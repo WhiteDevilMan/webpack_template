@@ -1,1 +1,2 @@
-import './common'
+import './js/common'
+import './css/main.css'
