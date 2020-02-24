@@ -1,14 +1,26 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const PATHS = {
+  src: path.join(__dirname, './src'),
+  dist: path.join(__dirname, './dist'),
+  assets: 'assets/'
+} 
+
 module.exports = {
+ externals: {
+   paths: PATHS
+ },
  entry: {
-  app: './src/index.js'
+  //app: './src/index.js'
+  app: PATHS.src
  },
  output: {
-  filename: '[name].js',
-  path: path.resolve(__dirname, './dist'),
-  publicPath: '/dist'
+  //filename: '[name].js',
+  filename: `${PATHS.assets}js/[name].js`,
+  //path: path.resolve(__dirname, './dist'),
+  path: PATHS.dist,
+  publicPath: '/'
  },
  module: {
   rules:[{
@@ -50,8 +62,8 @@ module.exports = {
   new MiniCssExtractPlugin({
     // Options similar to the same options in webpackOptions.output
     // both options are optional
-    filename: '[name].css',
-    chunkFilename: '[id].css',
+    filename: `${PATHS.assets}css/[name].css`,
+    //chunkFilename: '[id].css',
   }),
  ],
 }
