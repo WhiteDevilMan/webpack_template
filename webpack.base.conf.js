@@ -1,5 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const PATHS = {
   src: path.join(__dirname, './src'),
@@ -27,6 +29,12 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
+    }, {
+      test: /\.(png|jpg|gif|svg)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
     }, {
     test: /\.scss$/,
     use: [
@@ -65,5 +73,14 @@ module.exports = {
       filename: `${PATHS.assets}css/[name].css`,
       //chunkFilename: '[id].css',
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/index.html`,
+      filename: './index.html'
+    }),
+    new CopyWebpackPlugin([
+      { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/static`, to: '' },
+    ]),
   ],
 }
