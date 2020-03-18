@@ -22,10 +22,11 @@
         <section id="main">
           <div class="container">
             <h1>Webpack</h1>
+            <button @click="component = !component">Show vue component</button>
           </div>
         </section>
         <!--end example section-->
-        <example-component></example-component>
+        <example-component v-if="component"></example-component>
 
         <footer>
           <!--footer header-->
