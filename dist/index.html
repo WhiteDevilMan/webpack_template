@@ -8,11 +8,39 @@
   <title>Document</title>
 <link href="/assets/css/app.css" rel="stylesheet"></head>
 <body>
+  <!--main wrapper-->
   <div class="wrapper">
-    <h1>webpack</h1>    
-  </div>
-  <img src="/assets/img/test_image.jpg" alt="">
 
+    <div id="app">
+      <header>
+        <!--header here-->
+      </header>
+
+      <!--content wrapper-->
+      <div class="content-wrapper">
+        <!--example section-->
+        <section id="main">
+          <div class="container">
+            <h1>Webpack</h1>
+            <button @click="component = !component">Show vue component</button>
+          </div>
+        </section>
+        <!--end example section-->
+        <example-component v-if="component"></example-component>
+
+        <footer>
+          <!--footer header-->
+        </footer>
+      </div>
+      <!--content wrapper-->
+    </div>
+    <!--end #app-->   
+  </div>
+  <!--end main wrapper-->
+
+  <!--
+  <img src="/assets/img/test_image.jpg" alt="">
+  -->
   <script src="/dist/app.js"></script>
-<script type="text/javascript" src="/assets/js/app.js"></script></body>
+<script type="text/javascript" src="/assets/js/vendors.js"></script><script type="text/javascript" src="/assets/js/app.js"></script></body>
 </html>
