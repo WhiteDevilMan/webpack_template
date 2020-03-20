@@ -20,7 +20,7 @@ module.exports = {
   },
   output: {
     //filename: '[name].js',
-    filename: `${PATHS.assets}js/[name].js`,
+    filename: `${PATHS.assets}js/[name].[hash].js`,
     //path: path.resolve(__dirname, './dist'),
     path: PATHS.dist,
     publicPath: '/'
@@ -97,7 +97,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: `${PATHS.assets}css/[name].css`,
+      filename: `${PATHS.assets}css/[name].[hash].css`,
       //chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
