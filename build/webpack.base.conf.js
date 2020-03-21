@@ -15,13 +15,10 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    //app: './src/index.js'
     app: PATHS.src
   },
   output: {
-    //filename: '[name].js',
     filename: `${PATHS.assets}js/[name].[hash].js`,
-    //path: path.resolve(__dirname, './dist'),
     path: PATHS.dist,
     publicPath: '/'
   },
@@ -95,10 +92,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // both options are optional
       filename: `${PATHS.assets}css/[name].[hash].css`,
-      //chunkFilename: '[id].css',
     }),
     new HtmlWebpackPlugin({
       hash: false,
