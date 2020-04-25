@@ -49,6 +49,12 @@ module.exports = {
         }
       }
     }, {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
+    }, {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
@@ -96,12 +102,14 @@ module.exports = {
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
     new HtmlWebpackPlugin({
-      hash: false,
+      //hash: false,
       template: `${PATHS.src}/index.html`,
-      filename: './index.html'
+      filename: './index.html',
+      inject: true
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/img`,    to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/fonts`,  to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ]),
   ],
