@@ -1,4 +1,9 @@
 @import 'image';
+@import 'utils/vars.scss';
+
+body{
+  font-family: $mainFont;
+}
 
 h1 {
   color: rgb(111, 30, 158);
