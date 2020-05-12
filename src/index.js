@@ -25,3 +25,4 @@ const app = new Vue({
   store,
   el: '#app'
 })
+//import 'vue' End
