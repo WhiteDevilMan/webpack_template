@@ -7,8 +7,8 @@ git clone https://github.com/...
 # Go to the app:
 cd Webpack_template
 
-# Install dependencies:
-npm install
+# Install dependencies from package.json:
+npm install (npm i)
 
 # Server with hot reload at http://localhost:8081/
 npm run dev
