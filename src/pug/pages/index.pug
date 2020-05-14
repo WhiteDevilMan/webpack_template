@@ -8,5 +8,15 @@ block variables
 block content
   section
     .container
-      h1 Jade - node template engine
-      p Hello pug
+      .item
+        h1 Jade - node template engine
+        p Hello pug
+
+
+block script
+  script(type='text/javascript').
+    const foo = true;
+    let bar = function() {};
+    if (foo) {
+    bar(1 + 5)
+    }
