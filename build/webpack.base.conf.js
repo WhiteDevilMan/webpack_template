@@ -11,7 +11,7 @@ const PATHS = {
 } 
 
 //Pages const for HtmlWebpackPlugin
-const PAGES_DIR = `${PATHS.src}/pug/pages`
+const PAGES_DIR = `${PATHS.src}/pages`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(filename => filename.endsWith('.pug'))
 
 module.exports = {
