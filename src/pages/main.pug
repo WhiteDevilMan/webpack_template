@@ -1,4 +1,4 @@
-include ../utils/mixins
+include mixins
 block variables
 
 doctype html
@@ -13,9 +13,9 @@ html(lang='en')
     wrapper
       //vue
       #app 
-        include ../includes/modules/header
+        include header
         .contant-wrapper
           block content
-        include ../includes/modules/footer
+        include footer
 
     block script
