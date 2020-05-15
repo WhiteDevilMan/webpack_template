@@ -8,21 +8,3 @@ import './assets/scss/main.scss'
 // Bootstrap (example)
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
-
-// import 'vue'
-// import Vue from 'vue'
-window.Vue = require('vue')
-import store from './store'
-
-Vue.component('example-component', require('./components/Example.vue').default)
-
-const app = new Vue({
-  data () {
-    return {
-      component: false,
-    }
-  },
-  store,
-  el: '#app'
-})
-//import 'vue' End
