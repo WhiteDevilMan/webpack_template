@@ -2,10 +2,10 @@
 
 ``` bash
 # Download repository:
-git clone https://github.com/...
+git clone https://github.com/WhiteDevilMan/webpack_template
 
 # Go to the app:
-cd Webpack_template
+cd webpack_template
 
 # Install dependencies from package.json:
 npm install (npm i)
@@ -16,6 +16,3 @@ npm run dev
 # Output will be at dist/ folder
 npm run build
 ```
-
-
-github pages link:
