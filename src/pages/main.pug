@@ -11,11 +11,9 @@ html(lang='en')
 
   body(class=pageClass)
     wrapper
-      //vue
-      #app 
-        include ../components/header/header
-        .contant-wrapper
-          block content
-        include ../components/footer/footer
+      include ../components/header/header
+      .contant-wrapper
+        block content
+      include ../components/footer/footer
 
     block script
