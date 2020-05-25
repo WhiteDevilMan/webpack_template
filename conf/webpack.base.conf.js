@@ -22,12 +22,12 @@ module.exports = {
   },
   entry: {
     app: PATHS.src,
-    lk:  `${PATHS.src}/lk.js`
+    lk:  `${PATHS.src}/lk.js` //дополнительная точка входа для примера
   },
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    //publicPath: isDev ? '/' : './' //так работают стили в dev и в build
+    //publicPath: isDev ? '/' : './' //без pablicPath работают стили и в dev и в build
   },
   optimization: {
     splitChunks: {
@@ -51,9 +51,10 @@ module.exports = {
       exclude: '/node_modules/'
     }, {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-      loader: 'file-loader',
+      loader: 'url-loader',
       options: {
-        name: '[name].[ext]'
+        name: '[name].[ext]',
+        //outputPath: 'assets/'
       }
     }, {
       test: /\.(png|jpg|gif|svg)$/,
