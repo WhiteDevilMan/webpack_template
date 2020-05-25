@@ -3,6 +3,8 @@ const fs = require('fs')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const isDev = process.env.NODE_ENV === 'development'
+// const isProd = !isDev
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -25,7 +27,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: './'
+    //publicPath: isDev ? '/' : './' //так работают стили в dev и в build
   },
   optimization: {
     splitChunks: {
