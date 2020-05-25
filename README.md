@@ -4,15 +4,15 @@
 # Download repository:
 git clone https://github.com/WhiteDevilMan/webpack_template
 
-# Go to the app:
+# Go to the folder:
 cd webpack_template
 
 # Install dependencies from package.json:
 npm install (npm i)
 
-# Server with hot reload at http://localhost:8081/
+# Start server with hot reload
 npm run dev
 
-# Output will be at dist/ folder
+# Build project. Output will be at 'dist' folder
 npm run build
 ```
