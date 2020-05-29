@@ -4,8 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const isDev = process.env.NODE_ENV === 'development'
-// const isProd = !isDev
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -28,8 +26,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    //publicPath: './'
-    //publicPath: isDev ? '/' : './' //без pablicPath работают стили и в dev и в build
+    //publicPath: './' //без pablicPath работают стили и в dev и в build
   },
   optimization: {
     splitChunks: {
@@ -119,7 +116,7 @@ module.exports = {
       inject: true
     }),
     */
-   
+
     /*
       Automatic creation any html pages (Don't forget to RERUN dev server!)
       See more:
