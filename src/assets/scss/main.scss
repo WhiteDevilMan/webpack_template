@@ -1,7 +1,9 @@
 @import 'utils/vars.scss';
+@import 'utils/reset.scss';
 
 body{
   font-family: $mainFont;
+  font-size: $mainFontSize;
 }
 
 h1 {
