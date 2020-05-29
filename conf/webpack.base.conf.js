@@ -62,7 +62,7 @@ module.exports = {
       }
     }, {
       test: /\.(png|jpg|gif|svg)$/,
-      loader: 'file-loader',
+      loader: 'url-loader',
       options: {
         name: '[name].[ext]'
       }
@@ -107,6 +107,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].[hash].css`,
     }),
+    new CopyWebpackPlugin([
+      { from: `${PATHS.src}/components/**/*.{jpg,jpeg,png,svg,gif}`,    to: `${PATHS.assets}img`, flatten: true },
+      { from: `${PATHS.src}/${PATHS.assets}fonts`,  to: `${PATHS.assets}fonts` },
+      { from: `${PATHS.src}/static`, to: '' },
+    ]),
     /*
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/index.html`,
@@ -114,11 +119,7 @@ module.exports = {
       inject: true
     }),
     */
-    new CopyWebpackPlugin([
-      { from: `${PATHS.src}/${PATHS.assets}img`,    to: `${PATHS.assets}img` },
-      { from: `${PATHS.src}/${PATHS.assets}fonts`,  to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/static`, to: '' },
-    ]),
+   
     /*
       Automatic creation any html pages (Don't forget to RERUN dev server!)
       See more:
