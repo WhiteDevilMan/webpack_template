@@ -55,8 +55,10 @@ module.exports = {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'url-loader',
       options: {
+        outputPath: "assets/fonts",
+        publicPath: "../fonts",
         name: '[name].[ext]',
-        //outputPath: 'assets/'
+        limit: 1000
       }
     }, {
       test: /\.(png|jpg|gif|svg)$/,
