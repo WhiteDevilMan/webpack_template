@@ -1,32 +1,25 @@
 ## Build Setup:
-
-
-# Download repository:
 ```bash
+# Download repository:
+
 $ git clone https://github.com/WhiteDevilMan/webpack_template
-```
 
 # Go to the folder:
-```bash
 $ cd webpack_template
-```
+
 
 # Install dependencies from package.json:
-```bash
 $ npm install
-```
+
 or
-```bash
+
 $ npm i
-```
+
 
 # Start server with hot reload
-```bash
 $ npm run dev
-```
 
 # Build project. Output will be at 'dist' folder
-```bash
 $ npm run build
 ```
 
