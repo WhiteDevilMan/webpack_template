@@ -21,7 +21,6 @@ $ npm run dev
 
 # Build project. Output will be at 'dist' folder
 $ npm run build
-```
 
 ## Used plugins:
 
