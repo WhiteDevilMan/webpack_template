@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./conf/webpack.dev.conf.js",
-    "build": "webpack --config ./conf/webpack.build.conf.js"
+    "build": "webpack --config ./conf/webpack.build.conf.js",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "> 1%",
