@@ -7,7 +7,6 @@ $ git clone https://github.com/WhiteDevilMan/webpack_template
 # Go to the folder:
 $ cd webpack_template
 
-
 # Install dependencies from package.json:
 $ npm install
 
@@ -15,12 +14,14 @@ or
 
 $ npm i
 
-
 # Start server with hot reload
 $ npm run dev
 
 # Build project. Output will be at 'dist' folder
 $ npm run build
+
+# Deploy project to gh-pages
+$ npm run deploy
 ```
 
 ## Used plugins:
@@ -35,6 +36,7 @@ $ npm run build
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "file-loader": "^5.1.0",
+    "gh-pages": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
