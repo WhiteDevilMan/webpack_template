@@ -6,6 +6,10 @@ body{
   font-size: $mainFontSize;
 }
 
+.wrapper{
+  display: flex;
+}
+
 h1 {
   color: rgb(111, 30, 158);
 }
