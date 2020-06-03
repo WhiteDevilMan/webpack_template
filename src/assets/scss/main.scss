@@ -28,6 +28,21 @@ body{
   //сглаживание шрифтов (safari)-
 }
 
+section,
+.section{
+  position: relative;
+  padding: 40px 0;
+  @media screen and (min-width: $tableWidth) and (max-width: $smDesktopWidth){
+    padding: 36px 0;
+  }
+  @media screen and (min-width: $phoneWidth) and (max-width: $tableWidth){
+    padding: 28px 0;
+  }
+  @media screen and (min-width: $smPhoneWidth) and (max-width: $phoneWidth){
+    padding: 20px 0;
+  }
+}
+
 .wrapper{
   display: flex;
 }
