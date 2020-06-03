@@ -21,6 +21,11 @@ html{
 body{
   font-family: $mainFont;
   font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  //сглаживание шрифтов+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //сглаживание шрифтов (safari)-
 }
 
 .wrapper{
