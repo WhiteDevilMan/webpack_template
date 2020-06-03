@@ -2,6 +2,22 @@
 @import 'utils/reset.scss';
 @import 'utils/vars.scss';
 
+html{
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (min-width: $tableWidth) and (max-width: $desktopWidth){
+    font-size: 16px;
+  }
+  @media screen and (min-width: $phoneWidth) and (max-width: $tableWidth){
+    font-size: 15px;
+  }
+  @media screen and (min-width: $smPhoneWidth) and (max-width: $phoneWidth){
+    font-size: 14px;
+  }
+}
+
 body{
   font-family: $mainFont;
   font-size: $mainFontSize;
