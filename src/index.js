@@ -1,5 +1,5 @@
 // JS - ./js/common.js
-import './js/common'
+import './assets/js/common'
 
 // CSS (example)
 //import './assets/css/main.css'
