@@ -1,3 +1,13 @@
+@import '../../assets/scss/utils/vars.scss';
+
 .header-span{
-  color: orangered;
+  color: $primary-color;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mt-3{
+  margin-top: 30%;
 }
