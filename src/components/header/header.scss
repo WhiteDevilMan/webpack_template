@@ -1,13 +1,10 @@
 @import '../../assets/scss/utils/vars.scss';
 
-.header-span{
+.header__span{
   color: $primary-color;
 }
 
-.text-center{
+.header__webpack-icon{
   text-align: center;
-}
-
-.mt-3{
-  margin-top: 30%;
+  margin-top: 20%;
 }
