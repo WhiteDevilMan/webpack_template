@@ -3,16 +3,20 @@
   // Base Helvetica (example):
   @font-face {
     font-family: "Helvetica-Base";
-    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot'); // IE9 Compat Modes
-    src: url('/assets/fonts/Helvetica/Base/Helvetica-Base.eot?#iefix') format('embedded-opentype'), // IE6-IE8
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.woff') format('woff'), // Pretty Modern Browsers
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.ttf')  format('truetype'), // Safari, Android, iOS
-         url('/assets/fonts/Helvetica/Base/Helvetica-Base.svg') format('svg'); // Legacy iOS
+    src: url('../fonts/Helvetica-Base.eot'); // IE9 Compat Modes
+    src: url('../fonts/Helvetica-Base.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+         url('../fonts/Helvetica-Base.woff') format('woff'), // Pretty Modern Browsers
+         url('../fonts/Helvetica-Base.ttf')  format('truetype'), // Safari, Android, iOS
+         url('../fonts/Helvetica-Base.svg') format('svg'); // Legacy iOS
   }
   */
 
 // Montserrat
 @font-face {
   font-family: 'Montserrat-Black'; //, sans-serif;
-  src: url('../fonts/Montserrat-Black.ttf') format('truetype'); //Safari, Android, iOS
+  src:  url('../fonts/Montserrat-Black.eot'); // IE9 Compat Modes
+  src:  url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+        url('../fonts/Montserrat-Black.woff') format('woff'), // Pretty Modern Browsers
+        url('../fonts/Montserrat-Black.ttf') format('truetype'), //Safari, Android, iOS
+        url('../fonts/Montserrat-Black.svg') format('svg'); // Legacy iOS
 }
