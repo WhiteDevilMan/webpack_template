@@ -1,6 +1,6 @@
 {
   "name": "webpacktemplate",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "JackCoder, WDM",
   "main": "index.js",
   "scripts": {
