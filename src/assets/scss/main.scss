@@ -77,3 +77,24 @@ section,
     max-width: $smPhoneWidth;
   }
 }
+
+
+//flexbox
+.fd-row{
+  display: flex;
+  flex-direction: row;
+}
+.fd-rowrev{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fd-col{
+  display: flex;
+  flex-direction: column;
+}
+.fd-colrev{
+  display: flex;
+  flex-direction: column-reverse;
+}
+//flexbox
