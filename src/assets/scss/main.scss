@@ -80,20 +80,20 @@ section,
 
 
 //flexbox
-.fd-row{
+.flex-row{
   display: flex;
   flex-direction: row;
 }
-.fd-rowrev{
+.flex-row-reverse{
   display: flex;
   flex-direction: row-reverse;
 }
 
-.fd-col{
+.flex-column{
   display: flex;
   flex-direction: column;
 }
-.fd-colrev{
+.flex-column-reverse{
   display: flex;
   flex-direction: column-reverse;
 }
