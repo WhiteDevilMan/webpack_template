@@ -47,19 +47,19 @@ section,
 .wrapper{
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
   align-items: center;
   margin: 0 auto;
   padding: 0 auto;
   min-height: 100vh;
-  //min-width: 100vh;
   background-color: #2b3a42;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+// .content-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
 
 .container {
   width: 100%;
